@@ -1,0 +1,4 @@
+#! /bin/bash
+
+sudo setterm -powerdown 0
+sudo mount -t ramfs -o size=128m ramfs /var/www/html/videos/

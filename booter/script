@@ -1,0 +1,7 @@
+#! /bin/bash
+
+sudo setterm -powerdown 0
+sleep 30
+sudo mount -t ramfs -o size=128m ramfs /var/www/html/videos/
+sudo ffmpeg -fflags nobuffer -rtsp_transport tcp -i rtsp://admin:administrationBorneSidiailles19@192.168.0.70:554/live1.sdp -flags +cgop -g 30 -hls_flags delete_segments /var/www/html/videos/firstcam.m3u8 &
+sudo ffmpeg -fflags nobuffer -rtsp_transport tcp -i rtsp://admin:administrationBorneSidiailles19@192.168.0.71:554/live1.sdp -flags +cgop -g 30 -hls_flags delete_segments /var/www/html/videos/secondcam.m3u8 &

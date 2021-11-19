@@ -1,0 +1,5 @@
+#! /bin/bash
+
+sudo setterm -powerdown 0
+sleep 60
+sudo ffmpeg -fflags nobuffer -rtsp_transport tcp -r 5 -i rtsp://admin:administrationBorneSidiailles19@192.168.0.70:554/live1.sdp -flags +cgop -g 30 -hls_flags delete_segments -r 5 /var/www/html/videos/firstcam.m3u8
