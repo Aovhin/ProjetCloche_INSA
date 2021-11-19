@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sidiailles</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/video-js.css">
+    <link rel="stylesheet" href="./styles/all.css">
+    <!--load all styles -->
+    <!--    <link rel="stylesheet" href="./styles/font-awesome.min.css">-->
+
+</head>
+
+<body>
+
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg m-0" role="document">
+
+            <!--Content-->
+            <div class="modal-content">
+
+                <!--Body-->
+                <div class="modal-body mb-0 p-0">
+
+                    <video-js autoplay muted id="my_video_3" class="video-js vjs-default-skin vjs-16-9" controls preload="auto">
+                        <source src="./video.mp4">
+                    </video-js>
+
+                </div>
+
+
+
+            </div>
+            <!--/.Content-->
+
+        </div>
+    </div>
+
+    <button hidden class="btn btn-se" id="video_presentation" alt="video" data-toggle="modal" data-target="#modal1">test</button>
+
+
+    <nav class="navbar navbar-light bg-light">
+        <!--
+        <a class="navbar-brand" href="#">
+            <img src="./images/logo_cher.png" width="120" height="70" class="d-inline-block align-top" alt="">
+        </a>
+-->
+        <p class='mr-1'>
+            <h1>Mairie de Sidiailles - Département du Cher</h1>
+        </p>
+
+        <!--                <div class="vl ml-3 text-right "></div>-->
+
+        <div class="vl mr-3 text-left"></div>
+
+
+        <a class="navbar-brand" href="#">
+            <img src="./images/index.png" width="270" height="70" class="d-inline-block align-top" alt="">
+        </a>
+
+
+    </nav>
+
+    <div class="container-fluid col-12">
+        <div id="cameras" class="mt-3 col-12">
+            <div class="row">
+                <div class="column col-5">
+
+                    <div class="card bg-light mb-3 ">
+                        <!-- style="max-width: 36rem;" -->
+                        <div class="card-header">Agathe et Marie-France</div>
+                        <div class="card-body">
+                            <!--                    <video preload="auto" src="./videos/All%20over%20in%2010%20seconds.mp4" type="video/mp4" style="max-width: 33rem;"></video>-->
+                            <video-js autoplay muted id="my_video_1" class="vjs-default-skin" controls preload="auto" width="650" height="350">
+                                <source src="./videos/firstcam.m3u8">
+                                <!--                                type="application/x-mpegURL"-->
+                            </video-js>
+                            <!--
+                <h5 class="card-title">Light card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+-->
+                        </div>
+                    </div>
+                    <div class="card bg-light mb-3">
+                        <!-- style="max-width: 36rem;" -->
+                        <div class="card-header">Agathe (1239)</div>
+                        <div class="card-body">
+                            <video-js autoplay muted id="my_video_2" class="vjs-default-skin" controls preload="auto" width="650" height="350">
+                                <source src="./videos/secondcam.m3u8">
+                            </video-js>
+
+                            <!--
+                <h5 class="card-title">Light card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+-->
+                        </div>
+                    </div>
+                </div>
+                <div class="column col-7">
+                    <div id="carouselExampleIndicators" class="carousel slide mt-3" data-interval="false">
+                        <ol class="carousel-indicators mt-5" style="bottom: -50px">
+                            <li data-target="#carouselExampleIndicators" style="background-color: black;" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" style="background-color: black;" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" style="background-color: black;" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" style="background-color: black;" data-slide-to="3"></li>
+                            <li data-target="#carouselExampleIndicators" style="background-color: black;" data-slide-to="4"></li>
+                            <li data-target="#carouselExampleIndicators" style="background-color: black;" data-slide-to="5"></li>
+                            <li data-target="#carouselExampleIndicators" style="background-color: black;" data-slide-to="6"></li>
+
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <!--                                <img src="./images/eglise.jpg" height="30%" width="30%" class="d-flex justify-content-center" alt=""><br /><br />-->
+                                <h2 class="text-center">Bienvenue à Sidiailles</h2><br />
+                                La plus vieille cloche de France en activité se nomme <b>AGATHE</b>. Elle fut fondue en 1239 et a traversé les siècles pour trouver abri dans le clocher de <b>l’église Saint Pierre – Saint Paul de SIDIAILLES.</b><br /><br />
+                                C’est une cloche de 393,1 kg, pour un diamètre de 820 mm, une épaisseur de frappe de 62 mm et un point d’usure de 48 mm <br />(- 14 mm soit 22,58 %).<br /><br />
+                                Elle porte l’inscription latine : <b>«Mentem Sanctam Spontaneam Honorem Deo Patriae Liberationem »</b>, qui peut se traduire par : <b>La sainteté et l’indépendance pour l’esprit, la gloire à Dieu, la liberté pour la Patrie”</b> ou par <b>“Donne à notre âme la sainteté, à Dieu la gloire, à la Patrie la liberté”</b>. Une belle devise pour notre village !<br /><br />
+                                Il existe plusieurs hypothèses quant à son origine. L’une d’elles voudrait qu’elle fût un don de Saint Louis à l’Abbaye des Pierres, abbaye cistercienne du Moyen-âge, construite sur les promontoires de la rivière « La Joyeuse », en amont de l’actuel barrage de SIDIAILLES. Une autre légende suggère qu’elle fut la cloche de l’ancienne chapelle Sainte Valérie, près du Château de la Roche-Guillebault dont les ruines surplombent l’arrivée de l’Arnon dans le lac de SIDIAILLES.<br /><br />
+                                Il paraît qu’elle sonnait si fort qu’elle en éloignait les orages…<br /><br />
+
+
+
+
+                            </div>
+                            <div class="carousel-item">
+                                L'Abbaye des Pierres, proche de la commune
+                                de SIDIAILLES a été détruite pendant la Révolution.<br /><br />
+                                La cloche a pu résister à cette période car elle avait été cachée dans le fumier.<br /><br />
+                                Après l’ancienne église paroissiale, elle intègre le clocher de l’actuelle église lors de sa construction en 1880 par l’architecte Alfred DAUVERGNE, bâtisseur du bourg actuel (église, presbytère, mairie, école de garçons, école de filles).<br />
+                                Fidèle aux sidiaillais, elle a rythmé leurs bonheurs, leurs inquiétudes et chaque heure de leur vie ! Ô combien de mariages, de funérailles, d’annonces d’événements communaux, de tocsins pour la mobilisation, de volées pour la Libération ! Ô combien les oreilles lui ont été attentives…<br /><br />
+                                Elle montra de la fatigue dans les années 90, laissant apparaître une usure des frappes, marquée par les battements de plusieurs siècles. La volonté et la bonté sont venues à son secours. Inscrite au titre des Monuments Historiques, elle fut réparée, bichonnée en Anjou dans les ateliers des Ets BODET, spécialistes campanaires français. Une petite sœur, pour la soulager, est venue lui tenir compagnie : Marie-France, du nom de sa mécène, Marie-France LEMOINE. Et c’est sous un soleil resplendissant le 24 juin 2000, décorées de mille fleurs, que ces deux cloches ont été bénies dans notre église, par le Vicaire général du Cher, l’abbé Michel d’ALIGNY, en présence du maire, Maurice RIVIERE et de son conseil municipal porteurs de ce projet, des instances qui ont soutenu cette belle initiative de restauration, et des fidèles habitants de notre beau village.<br /><br />
+
+                            </div>
+                            <div class="carousel-item">
+                                Marie-France sonne les heures et les demi-heures. Agathe continue de sonner l’Angelus qui rythmait la vie de nos campagnes à 7 heures, midi et 19 heures. Rappelez-vous, quand vous l’écouterez, que ce sont les mêmes notes qui s’égrainent depuis l’an 1239 !<br /><br />
+                                Les notes d’Agathe sont aujourd’hui précieusement archivées dans la Bibliothèque Nationale de France depuis la Commémoration du Centenaire de l’Armistice de la Grande Guerre 1914-1918, lorsque, du haut de ses 779 ans, la doyenne des cloches de France a sonné le plenum, à la volée, pendant 11 minutes, à 11 heures, le 11 novembre 2018.<br /><br />
+                                Alors ici, plus qu’ailleurs peut-être, nous aimons le son des cloches, et souhaitons qu’elles rythment toujours la jolie campagne de SIDIAILLES et préservent notre paysage sonore !<br /><br />
+                                C’est pourquoi, en 2019, nous avons souhaité que vous puissiez voir AGATHE, en direct, dans son clocher. Pour cela, nous avons monté un partenariat avec les élèves de l’INSA Centre Val de Loire, Institut National des Sciences Appliquées de Bourges, Pierrick ROBIC-BUTEZ et Mohamed BATTIKH, et leur professeur, Isabelle MANCHON. Par l’intermédiaire de l’entreprise INFOCENTRE de Saint-Doulchard, ils ont uni leurs talents dans ce montage technique qui associe l’Histoire et la visite virtuelle pour échapper aux ‘simples contraintes’ d’escalade du clocher… ! Bravo et merci pour leur implication !<br /><br />
+                                <b>Bienvenue au cœur de SIDIAILLES et bonne visite à chacun d’entre vous!</b><br /> <br />
+                            </div>
+                            <div class="carousel-item">
+
+                                <b>QUIZZ CAMPANAIRE :</b><br /><br />
+                                - Combien de cloches en France ? <br />
+                                On estime 150 000 cloches, réparties dans plus de 45 000 clochers.<br /><br />
+                                - Quelle est la plus grosse cloche de France ?<br />
+                                La Savoyarde, au Sacré Cœur à PARIS. Elle pèse près de 19 tonnes.<br /><br />
+                                - Quelle est la plus grosse cloche du monde ?<br />
+                                La Tsar Kolokol, à MOSCOU qui pèse 200 tonnes. Cependant elle n’a jamais sonné car elle était cassée lors du démoulage.<br /><br />
+                                - Quelle est la plus ancienne cloche de France en activité ?<br />
+                                Vous êtes devant elle : c’est Agathe, à SIDIAILLES ! D’autres cloches sont encore plus anciennes mais ont cessé toute activité : Saint-Ronan et Saint-Pol-de-léon (Finistère) entre le VI e et le VIII e siècle, Le Puy-en-Velay (Haute-Loire) fin XII e siècle, Fontenailles (Calvados) 1202.<br /><br />
+                            </div>
+                            <div class="carousel-item">
+                                <u><b>DEVINETTE :</b></u><br />
+                                Qui suis-je ? <br /><br />
+                                <div class="text-center">
+                                    <i>Elle veille sur la source de vie<br />
+                                        Ô comme elle est belle et bonne.<br />
+                                        Inutile d’être un âne pour qu’elle nous donne du son<br />
+                                        A gat’ rien dans le paysage.<br />
+                                        Son père attendait sous le chêne<br />
+                                        Et son deuxième père reste à Tendu.<br />
+                                        Ceci dit, si vous êtes accroc,<br />
+                                        Elle n’est pas d’Auvergne, mais elle lui doit tout.<br /></i></div>
+                            </div>
+                            <div class="carousel-item">
+
+                                <u><b>Réponse :</b></u> La cloche du clocher de SIDIAILLES, AGATHE (1239), plus vieille cloche de France en activité.<br />
+                                <b><u>Explications :</u></b><br />
+                                <b>Elle veille sur la source de vie / Ô comme elle est belle et bonne :</b> la source de vie est l’eau de Sidiailles. Le lac de SIDIAILLES (90 ha – 5 600 000 m3 d’eau) est une retenue d’eau potable de très grande qualité, classée parmi les meilleures eaux brutes de France. Elle alimente 35 communes du Sud du Cher ainsi que Saint-Amand-Montrond, Montluçon et ses alentours.<br /><br />
+                                <b>Inutile d’être un âne pour qu’elle nous donne du son :</b> la cloche tinte tous les jours, à l’heure des Angelus, 7h, 12h, 19h. Depuis l’an 2000, une seconde cloche, Marie-France, sonne les heures.<br /><br />
+                                <b>A gat’rien dans le paysage :</b> Agathe, c’est son nom. Une petite chapelle est dédiée à Sainte Agathe, à droite de la nef dans l’église.<br /><br />
+                                <b>Son père attendait sous le chêne :</b> Saint Louis, qui aurait donné la cloche à l’Abbaye des Pierres, rendait Justice sous un chêne.<br /><br />
+                                <b>Et son deuxième père reste à Tendu :</b> La cloche a rejoint le clocher de la nouvelle église de SIDIAILLES lors de sa construction vers 1880 par Alfred Dauvergne, architecte du village actuel – l’ancien bourg était situé dans la rue qui descend près du calvaire. Sous l’égide du maire, le marquis MASSE de BAUDREUILLE, il y a construit l’église, la mairie, l’école des garçons, l’école des filles (devenue salle des fêtes) et le presbytère. Alfred DAUVERGNE est enterré au cimetière de Tendu (36).<br /><br />
+
+                            </div>
+                            <div class="carousel-item">
+
+                                <b>Ceci dit si vous êtes accro :</b> un clin d’œil à l’activité de l’accro-branche autour du lac de SIDIAILLES, également base de loisirs nautiques et haut-lieu touristique.<br /><br />
+                                <b>Elle n’est pas d’Auvergne, mais elle lui doit tout : ni de l’Auvergne (d’où nous sommes à deux pas :</b> la commune de SAINT-ELOY-d’ALLIER (03) s’étend sur la colline en face de l’église), ni créée par Dauvergne l’architecte. Cependant c’est Alfred DAUVERGNE qui redonne une seconde vie à AGATHE.
+                            </div>
+                        </div>
+
+
+                        <!--
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+-->
+                        <a class="carousel-control-next" id="button_next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                    <br />
+                    <br />
+
+
+                    <div class="row float-right mr-5 mt-2">
+                        <img src="./images/boutons_info.png" width="50%" height="50%" class="ml-auto float-right mt-5 mb-2" alt="">
+                    </div>
+                    <br />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts/jquery-3.3.1.slim.min.js"></script>
+    <script src="./scripts/bootstrap.min.js"></script>
+
+    <script src="./scripts/popper.min.js"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/video.js"></script>
+    <script src="./scripts/videojs-http-streaming.js"></script>
+
+    <script>
+        var player = videojs('my_video_1', {
+            autoplay: true,
+            muted: true
+
+        });
+        var player1 = videojs('my_video_2', {
+            autoplay: true,
+            muted: true
+
+        });
+        var player2 = videojs('my_video_3', {
+            autoplay: true,
+            muted: true
+
+        });
+        player2.on('ended', function() {
+            $('#modal1').modal('hide');
+        });
+        var btn = document.getElementById("video_presentation");
+        var btn_nxt = document.getElementById("button_next");
+
+        document.addEventListener("keyup", event => {
+            if (event.isComposing || event.keyCode === 229) {
+                return;
+            }
+            if (event.keyCode === 103 || event.keyCode === 55 || event.keyCode === 36) { //premier bouton
+                if (btn.disabled === true) {
+                    return;
+                } else {
+                    $('#video_presentation').trigger('click');
+                    btn.disabled = true; // disable button
+                    player2.requestFullscreen();
+                    player2.currentTime(0);
+                    window.setTimeout(function() {
+                        btn.disabled = false; // enable button
+                    }, 2000 /* 2 sec */ );
+                }
+            } //note Do ... fumier... révolution... 
+            //reste à faire : 
+            //cancel full screen et stop video quand c'est fini
+            // Nouveau texte 
+            if (event.keyCode === 101 || event.keyCode === 53 || event.keyCode === 12) { //seconde bouton
+                if (btn_nxt.disabled === true) {
+                    return;
+                } else {
+                    $('#button_next').trigger('click');
+                    btn_nxt.disabled = true; // disable button
+
+                    window.setTimeout(function() {
+                        btn_nxt.disabled = false; // enable button
+                    }, 1000 /* 1 sec */ );
+                }
+            }
+            //do something
+        });
+
+    </script>
+</body>
+
+</html>

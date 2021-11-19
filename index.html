@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sidiailles</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/video-js.css">
+    <link rel="stylesheet" href="./styles/all.css">
+    <!--load all styles -->
+    <!--    <link rel="stylesheet" href="./styles/font-awesome.min.css">-->
+
+</head>
+
+<body>
+
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg m-0" role="document">
+
+            <!--Content-->
+            <div class="modal-content">
+
+                <!--Body-->
+                <div class="modal-body mb-0 p-0">
+
+                    <video-js autoplay muted id="my_video_3" class="video-js vjs-default-skin vjs-16-9" controls preload="auto">
+                        <source src="./video.mp4">
+                    </video-js>
+
+                </div>
+
+
+
+            </div>
+            <!--/.Content-->
+
+        </div>
+    </div>
+
+    <button hidden class="btn btn-se" id="video_presentation" alt="video" data-toggle="modal" data-target="#modal1">test</button>
+
+
+    <nav class="navbar navbar-light bg-light">
+        <!--
+        <a class="navbar-brand" href="#">
+            <img src="./images/logo_cher.png" width="120" height="70" class="d-inline-block align-top" alt="">
+        </a>
+-->
+        <p class='mr-1'>
+            <h1>Mairie de Sidiailles - Département du Cher</h1>
+        </p>
+
+        <!--                <div class="vl ml-3 text-right "></div>-->
+
+        <div class="vl mr-3 text-left"></div>
+
+
+        <a class="navbar-brand" href="#">
+            <img src="./images/index.png" width="270" height="70" class="d-inline-block align-top" alt="">
+        </a>
+
+
+    </nav>
+
+    <div class="container-fluid col-12">
+        <div id="cameras" class="mt-3 col-12">
+            <div class="row">
+                <div class="column col-5">
+
+                    <div class="card bg-light mb-3 ">
+                        <!-- style="max-width: 36rem;" -->
+                        <div class="card-header">Agathe et Marie-France</div>
+                        <div class="card-body">
+                            <!--                    <video preload="auto" src="./videos/All%20over%20in%2010%20seconds.mp4" type="video/mp4" style="max-width: 33rem;"></video>-->
+                            <video-js autoplay muted id="my_video_1" class="vjs-default-skin" controls preload="auto" width="650" height="350">
+                                <source src="./videos/firstcam.m3u8">
+                                <!--                                type="application/x-mpegURL"-->
+                            </video-js>
+                            <!--
+                <h5 class="card-title">Light card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+-->
+                        </div>
+                    </div>
+                    <div class="card bg-light mb-3">
+                        <!-- style="max-width: 36rem;" -->
+                        <div class="card-header">Agathe (1239)</div>
+                        <div class="card-body">
+                            <video-js autoplay muted id="my_video_2" class="vjs-default-skin" controls preload="auto" width="650" height="350">
+                                <source src="./videos/secondcam.m3u8">
+                            </video-js>
+
+                            <!--
+                <h5 class="card-title">Light card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+-->
+                        </div>
+                    </div>
+                </div>
+                <div class="column col-7">
+                    <div id="carouselExampleIndicators" class="carousel slide mt-3" data-interval="false">
+                        <ol class="carousel-indicators mt-5" style="bottom: -50px">
+                            <li data-target="#carouselExampleIndicators" style="background-color: black;" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" style="background-color: black;" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" style="background-color: black;" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" style="background-color: black;" data-slide-to="3"></li>
+                            <li data-target="#carouselExampleIndicators" style="background-color: black;" data-slide-to="4"></li>
+                            <li data-target="#carouselExampleIndicators" style="background-color: black;" data-slide-to="5"></li>
+                            <li data-target="#carouselExampleIndicators" style="background-color: black;" data-slide-to="6"></li>
+
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <!--                                <img src="./images/eglise.jpg" height="30%" width="30%" class="d-flex justify-content-center" alt=""><br /><br />-->
+                                <h2 class="text-center">Bienvenue à Sidiailles</h2><br />
+                                La plus vieille cloche de France en activité se nomme <b>AGATHE</b>. Elle fut fondue en 1239 et a traversé les siècles pour trouver abri dans le clocher de <b>l’église Saint Pierre – Saint Paul de SIDIAILLES.</b><br /><br />
+                                C’est une cloche de 393,1kg, pour un diamètre de 820mm, une épaisseur de frappe de 62mm et un point d’usure de 48mm <br />(-14mm soit 22,58%).<br />
+                                Elle porte l’inscription latine : <b>«Mentem Sanctam Spontaneam Honorem Deo Patriae Liberationem »</b>, qui peut se traduire par : <b>"La sainteté et l’indépendance pour l’esprit, la gloire à Dieu, la liberté pour la Patrie"</b> ou par <b>“Donne à notre âme la sainteté, à Dieu la gloire, à la Patrie la liberté”</b>. Une belle devise pour notre village !<br /><br />
+
+                                <div style="height:2px; background-color:black"></div>
+
+                                <h2 class="text-center">Welcome to Sidiailles</h2><br />
+                                The oldest active bell in France is called <b>AGATHE</b>. It was melted down in 1239 and has survived through the centuries to find shelter in the bell tower of <b> Saint Pierre – Saint Paul of SIDIAILLES church.</b><br /><br />
+                               It is a 393.1kg bell, with a diameter of 820mm, a striking thickness of 62mm and a wear point of 48mm <br />(- 14 mm corresponding to 22,58 %).<br />
+                                It is inscribed in Latin:<b>«Mentem Sanctam Spontaneam Honorem Deo Patriae Liberationem »</b>, which can be translated as: <b>"Holiness and independence for the spirit, glory to God, freedom for the Fatherland"</b> or <b>"Give our soul holiness, God glory, the Fatherland freedom"</b>. A great motto for our village!<br /><br />
+
+
+
+
+                            </div>
+			<div class="carousel-item">
+                                Il existe plusieurs hypothèses quant à son origine. L’une d’elles voudrait qu’elle fût un don de Saint Louis à l’Abbaye des Pierres, abbaye cistercienne du Moyen-âge, construite sur les promontoires de la rivière « La Joyeuse », en amont de l’actuel barrage de SIDIAILLES. Une autre légende suggère qu’elle fut la cloche de l’ancienne chapelle Sainte Valérie, près du Château de la Roche-Guillebault dont les ruines surplombent l’arrivée de l’Arnon dans le lac de SIDIAILLES.<br /><br />
+                                Il paraît qu’elle sonnait si fort qu’elle en éloignait les orages…<br /><br />
+
+                                <div style="height:2px; background-color:black"></div>
+                                There are several hypotheses as to its origin. One of them would like it to have been a gift from Saint Louis to the Abbey of the Stones, a Cistercian abbey from the Middle Ages, built on the promontories of the river "La Joyeuse", upstream of the current SIDIAILLES dam. Another legend suggests that it was the bell of the old chapel of Sainte Valérie, near the Roche-Guillebault castle, whose ruins overlook the arrival of the Arnon in lake of SIDIAILLES.<br /><br />
+                                It seems that it sounded so loud that it kept storms away...<br /><br />
+
+			</div>
+                            <div class="carousel-item">
+                                L'Abbaye des Pierres, proche de la commune de SIDIAILLES a été détruite pendant la Révolution.<br /><br />
+                                La cloche a pu résister à cette période car elle avait été cachée dans le fumier.<br /><br />
+                                Après l’ancienne église paroissiale, elle intègre le clocher de l’actuelle église lors de sa construction en 1880 par l’architecte Alfred DAUVERGNE, bâtisseur du bourg actuel (église, presbytère, mairie, école de garçons, école de filles).<br />
+                                Fidèle aux sidiaillais, elle a rythmé leurs bonheurs, leurs inquiétudes et chaque heure de leur vie ! Ô combien de mariages, de funérailles, d’annonces d’événements communaux, de tocsins pour la mobilisation, de volées pour la Libération ! Ô combien les oreilles lui ont été attentives…<br /><br />
+
+                                <div style="height:2px; background-color:black"></div>
+
+                                The Abbey of the Stones, near the town of SIDIAILLES, was destroyed during the Revolution.<br /><br />
+                                The bell could withstand this period because it had been hidden in the manure.<br /><br />
+                                After the former parish church, it integrates the bell tower of the current church when it was built in 1880 by the architect Alfred DAUVERGNE, builder of the current village (church, presbytery, town hall, boys school, girls school).<br />
+                                Faithful to the people of Sidiailles, she has punctuated their happiness, their worries and every hour of their lives! Oh how many weddings, funerals, announcements of communal events, tocsins for mobilization, flights for Liberation! How attentive the ears were to him...<br /><br />
+
+                            </div>
+
+                            <div class="carousel-item">
+
+                                Elle montra de la fatigue dans les années 90, laissant apparaître une usure des frappes, marquée par les battements de plusieurs siècles. La volonté et la bonté sont venues à son secours. Inscrite au titre des Monuments Historiques, elle fut réparée, bichonnée en Anjou dans les ateliers des Ets BODET, spécialistes campanaires français. Une petite sœur, pour la soulager, est venue lui tenir compagnie : Marie-France, du nom de sa mécène, Marie-France LEMOINE. Et c’est sous un soleil resplendissant le 24 juin 2000, décorées de mille fleurs, que ces deux cloches ont été bénies dans notre église, par le Vicaire général du Cher, l’abbé Michel d’ALIGNY, en présence du maire, Maurice RIVIERE et de son conseil municipal porteurs de ce projet, des instances qui ont soutenu cette belle initiative de restauration, et des fidèles habitants de notre beau village.<br /><br />
+                                <div style="height:2px; background-color:black"></div>
+
+                                It showed fatigue in the 1990s, showing a wear and tear of the hits, marked by the beats of several centuries. Will and kindness came to his aid. Registered as a Historical Monument, it was repaired and pampered in Anjou in the workshops of Ets BODET, French bell-tower specialists. A little sister, to relieve her, came to keep her company: Marie-France, named after her patron, Marie-France LEMOINE. And it was under a shining sun on June 24, 2000, decorated with a thousand flowers, that these two bells were blessed in our church, by the Vicar General of Cher, Father Michel d'ALIGNY, in the presence of the Mayor, Maurice RIVIERE and his Municipal Council, the authorities who supported this beautiful restoration initiative, and the faithful inhabitants of our beautiful village.<br /><br />
+
+                            </div>
+
+                            <div class="carousel-item">
+                                Marie-France sonne les heures et les demi-heures. Agathe continue de sonner l’Angelus qui rythmait la vie de nos campagnes à 7 heures, midi et 19 heures. Rappelez-vous, quand vous l’écouterez, que ce sont les mêmes notes qui s’égrainent depuis l’an 1239 !<br /><br />
+                                Les notes d’Agathe sont aujourd’hui précieusement archivées dans la Bibliothèque Nationale de France depuis la Commémoration du Centenaire de l’Armistice de la Grande Guerre 1914-1918, lorsque, du haut de ses 779 ans, la doyenne des cloches de France a sonné le plenum, à la volée, pendant 11 minutes, à 11 heures, le 11 novembre 2018.<br /><br />
+                                Alors ici, plus qu’ailleurs peut-être, nous aimons le son des cloches, et souhaitons qu’elles rythment toujours la jolie campagne de SIDIAILLES et préservent notre paysage sonore !<br /><br />
+
+
+                                <div style="height:2px; background-color:black"></div>
+
+                                Marie-France rings the hours and half hours. Agathe continues to sound the Angelus which punctuated the life of our countryside at 7 am, noon and 7 pm. Remember, when you listen to it, that it is the same notes that have been smeared since 1239!<br /><br />
+                                Agathe's notes are now carefully archived in the Bibliothèque Nationale de France since the Commemoration of the Centenary of the Armistice of the Great War 1914-1918, when, at the age of 779, the oldest bell in France rang the plenum on the fly for 11 minutes at 11 a.m. on 11 November 2018.<br /><br />
+                                So here, more than anywhere else perhaps, we love the sound of bells, and we hope that they will always punctuate the pretty countryside of SIDIAILLES and preserve our sound landscape!<br /><br />
+
+                            </div>
+
+                            <div class="carousel-item">
+                                C’est pourquoi, en 2019, nous avons souhaité que vous puissiez voir AGATHE, en direct, dans son clocher. Pour cela, nous avons monté un partenariat avec les élèves de l’INSA Centre Val de Loire, Institut National des Sciences Appliquées de Bourges, Pierrick ROBIC-BUTEZ et Mohamed BATTIKH, et leur professeur, Isabelle MANCHON. Par l’intermédiaire de l’entreprise INFOCENTRE de Saint-Doulchard, ils ont uni leurs talents dans ce montage technique qui associe l’Histoire et la visite virtuelle pour échapper aux ‘simples contraintes’ d’escalade du clocher… ! Bravo et merci pour leur implication !<br /><br />
+                                <b>Bienvenue au cœur de SIDIAILLES et bonne visite à chacun d’entre vous!</b><br /> <br />
+
+                                <div style="height:2px; background-color:black"></div>
+                                That is why, in 2019, we wanted you to be able to see AGATHE, live, in its bell tower. To do this, we have set up a partnership with the students of the INSA Centre Val de Loire, Institut National des Sciences Appliquées of Bourges, Pierrick ROBIC-BUTEZ and Mohamed BATTIKH, and their teacher, Isabelle MANCHON. Through the company INFOCENTRE of Saint-Doulchard, they have joined their talents in this technical assembly which combines history and virtual tours to escape the "simple" constraints of climbing the bell tower... ! Congratulations and thank you for their involvement!<br /><br />
+                                <b>Welcome to the heart of SIDIAILLES and enjoy your visit!</b><br /> <br />
+
+                            </div>
+
+                            <div class="carousel-item">
+
+                                <b>QUIZZ CAMPANAIRE :</b><br /><br />
+                                - Combien de cloches en France ? <br />
+                                On estime 150 000 cloches, réparties dans plus de 45 000 clochers.<br /><br />
+                                - Quelle est la plus grosse cloche de France ?<br />
+                                La Savoyarde, au Sacré Cœur à PARIS. Elle pèse près de 19 tonnes.<br /><br />
+                                - Quelle est la plus grosse cloche du monde ?<br />
+                                La Tsar Kolokol, à MOSCOU qui pèse 200 tonnes. Cependant elle n’a jamais sonné car elle était cassée lors du démoulage.<br /><br />
+
+
+                                <div style="height:2px; background-color:black"></div>
+
+                                <b>BELL QUIZZ:</b><br /><br />
+                                - How many bells in France? <br />
+                                It is estimated that there are 150,000 bells, spread over more than 45,000 bells.<br /><br />
+                                - What is the biggest bell in France?<br />
+                                La Savoyarde, at the Sacré Cœur in PARIS. It weighs nearly 19 tons.<br /><br />
+                                - What is the biggest bell in the world?<br />
+                                Tsar Kolokol, in MOSCOW, which weighs 200 tons. However, it never rang because it was broken during demoulding.<br /><br />
+
+
+                            </div>
+
+                            <div class="carousel-item">
+                                <b>QUIZZ CAMPANAIRE :</b><br /><br />
+                                - Quelle est la plus ancienne cloche de France en activité ?<br />
+                                Vous êtes devant elle : c’est Agathe, à SIDIAILLES ! D’autres cloches sont encore plus anciennes mais ont cessé toute activité : Saint-Ronan et Saint-Pol-de-léon (Finistère) entre le VI e et le VIII e siècle, Le Puy-en-Velay (Haute-Loire) fin XII e siècle, Fontenailles (Calvados) 1202.<br /><br />
+
+                                <div style="height:2px; background-color:black"></div>
+                                <b>BELL QUIZZ:</b><br /><br />
+                                - What is the oldest bell in France in activity?<br />
+                                You are in front of her: it is Agathe, in SIDIAILLES! Other bells are even older but have ceased all activity: Saint-Ronan and Saint-Pol-de-léon (Finistère) between the 6th and 8th centuries, Le Puy-en-Velay (Haute-Loire) at the end of the 12th century, Fontenailles (Calvados) 1202.<br /><br />
+
+                            </div>
+
+
+                            <div class="carousel-item">
+                                <u><b>DEVINETTE :</b></u><br />
+                                Qui suis-je ? <br /><br />
+                                <div class="text-center">
+                                    <i>Elle veille sur la source de vie<br />
+                                        Ô comme elle est belle et bonne.<br />
+                                        Inutile d’être un âne pour qu’elle nous donne du son<br />
+                                        A gat’ rien dans le paysage.<br />
+                                        Son père attendait sous le chêne<br />
+                                        Et son deuxième père reste à Tendu.<br />
+                                        Ceci dit, si vous êtes accroc,<br />
+                                        Elle n’est pas d’Auvergne, mais elle lui doit tout.<br /></i></div>
+
+                                <div style="height:2px; background-color:black"></div>
+
+                                <u><b>RIDDLE!</b></u><br />
+                                Who am I? <br /><br />
+                                <div class="text-center">
+                                    <i>It watches over the source of life<br />
+                                        Oh how beautiful and good it is.<br />
+                                        You don't have to be a donkey to get her to give us sound<br />
+                                        His father was waiting under the oak tree<br />
+                                        And his second father stays in Tendu.<br />
+                                        That being said, if you're hooked,<br />
+                                        She is not from Auvergne, but she owes him everything.<br /></i></div>
+
+                            </div>
+                            <div class="carousel-item">
+
+                                <u><b>Réponse :</b></u> La cloche du clocher de SIDIAILLES, AGATHE (1239), plus vieille cloche de France en activité.<br />
+                                <b><u>Explications :</u></b><br />
+                                <b>Elle veille sur la source de vie / Ô comme elle est belle et bonne :</b> la source de vie est l’eau de Sidiailles. Le lac de SIDIAILLES (90 ha – 5 600 000 m3 d’eau) est une retenue d’eau potable de très grande qualité, classée parmi les meilleures eaux brutes de France. Elle alimente 35 communes du Sud du Cher ainsi que Saint-Amand-Montrond, Montluçon et ses alentours.<br /><br />
+                                <b>Inutile d’être un âne pour qu’elle nous donne du son :</b> la cloche tinte tous les jours, à l’heure des Angelus, 7h, 12h, 19h. Depuis l’an 2000, une seconde cloche, Marie-France, sonne les heures.<br /><br />
+                                <b>A gat’rien dans le paysage :</b> Agathe, c’est son nom. Une petite chapelle est dédiée à Sainte Agathe, à droite de la nef dans l’église.<br /><br />
+
+                                <div style="height:2px; background-color:black"></div>
+
+                                <u><b>Answer :</b></u> The bell of the bell tower of SIDIAILLES, AGATHE (1239), the oldest active bell in France.<br />
+                                <b><u>Explanations:</u></b><br />
+                                <b>She watches over the source of life / Oh how beautiful and good she is:</b> the source of life is Sidiailles water. Lake of SIDIAILLES (90 ha - 5 600 000 m3 of water) is a reservoir for drinking water of very high quality, classified among the best raw water in France. It supplies 35 municipalities in the South of the Cher as well as Saint-Amand-Montrond, Montluçon and its surroundings.<br /><br />
+                                <b>There's no need to be a donkey for her to give us sound:</b> the bell rings every day, at Angelus time, 7:00, 12:00, 7:00, 7:00. Since 2000, a second bell, Marie-France, has been ringing the hours.<br /><br />
+                                
+
+                            </div>
+
+                            <div class="carousel-item">
+                                <u><b>Réponse :</b></u> La cloche du clocher de SIDIAILLES, AGATHE (1239), plus vieille cloche de France en activité.<br />
+                                <b><u>Explications :</u></b><br />
+                                <b>Son père attendait sous le chêne :</b> Saint Louis, qui aurait donné la cloche à l’Abbaye des Pierres, rendait Justice sous un chêne.<br /><br />
+                                <b>Et son deuxième père reste à Tendu :</b> La cloche a rejoint le clocher de la nouvelle église de SIDIAILLES lors de sa construction vers 1880 par Alfred Dauvergne, architecte du village actuel – l’ancien bourg était situé dans la rue qui descend près du calvaire. Sous l’égide du maire, le marquis MASSE de BAUDREUILLE, il y a construit l’église, la mairie, l’école des garçons, l’école des filles (devenue salle des fêtes) et le presbytère. Alfred DAUVERGNE est enterré au cimetière de Tendu (36).<br /><br />
+
+
+                                <div style="height:2px; background-color:black"></div>
+
+                                <u><b>Answer :</b></u> The bell of the bell tower of SIDIAILLES, AGATHE (1239), the oldest active bell in France.<br />
+                                <b><u>Explanations:</u></b><br />
+<b>His father was waiting under the oak tree:</b>Saint Louis, who allegedly gave the bell to the Abbey of the Stones, did justice under an oak tree.<br /><br />
+                                <b>And his second father stays in Tendu:</b> The bell joined the bell tower of the new church of SIDIAILLES when it was built around 1880 by Alfred Dauvergne, architect of the current village - the old village was located in the street that goes down near the Calvary. Under the aegis of the mayor, the Marquis MASSE de BAUDREUILLE, the church, the town hall, the boys' school, the girls' school (now the festival hall) and the presbytery were built there. Alfred DAUVERGNE is buried in the Tendu cemetery (36).<br /><br />
+
+
+                            </div>
+
+                            <div class="carousel-item">
+
+                                <b>Ceci dit si vous êtes accro :</b> un clin d’œil à l’activité de l’accro-branche autour du lac de SIDIAILLES, également base de loisirs nautiques et haut-lieu touristique.<br /><br />
+                                <b>Elle n’est pas d’Auvergne, mais elle lui doit tout : ni de l’Auvergne (d’où nous sommes à deux pas :</b> la commune de SAINT-ELOY-d’ALLIER (03) s’étend sur la colline en face de l’église), ni créée par Dauvergne l’architecte. Cependant c’est Alfred DAUVERGNE qui redonne une seconde vie à AGATHE.
+
+                                <div style="height:2px; background-color:black"></div>
+
+                                <b>That being said, if you're addicted:</b> a nod to the activity of the accro-branche around the lake of SIDIAILLES, also a water sports base and a tourist mecca.<br /><br />
+                                <b>She is not from Auvergne, but she owes her everything: neither from Auvergne (from where we are a stone's throw away:</b> the commune of SAINT-ELOY-d'ALLIER (03) extends over the hill in front of the church), neither created by Dauvergne the architect. However, it was Alfred DAUVERGNE who gave AGATHE a second life.
+
+                            </div>
+                        </div>
+
+
+                        <!--
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+-->
+                        <a class="carousel-control-next" id="button_next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                    <br />
+                    <br />
+
+
+                    <div class="row float-right mr-5 mt-2">
+                        <img src="./images/boutons_info.png" width="50%" height="50%" class="ml-auto float-right mt-5 mb-2" alt="">
+                    </div>
+                    <br />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts/jquery-3.3.1.slim.min.js"></script>
+    <script src="./scripts/bootstrap.min.js"></script>
+
+    <script src="./scripts/popper.min.js"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/video.js"></script>
+    <script src="./scripts/videojs-http-streaming.js"></script>
+
+    <script>
+        var player = videojs('my_video_1', {
+            autoplay: true,
+            muted: true
+
+        });
+        var player1 = videojs('my_video_2', {
+            autoplay: true,
+            muted: true
+
+        });
+        var player2 = videojs('my_video_3', {
+            autoplay: true,
+            muted: true
+
+        });
+        player2.on('ended', function() {
+            $('#modal1').modal('hide');
+        });
+        var btn = document.getElementById("video_presentation");
+        var btn_nxt = document.getElementById("button_next");
+
+        document.addEventListener("keyup", event => {
+            if (event.isComposing || event.keyCode === 229) {
+                return;
+            }
+            if (event.keyCode === 103 || event.keyCode === 55 || event.keyCode === 36) { //premier bouton
+                if (btn.disabled === true) {
+                    return;
+                } else {
+                    $('#video_presentation').trigger('click');
+                    btn.disabled = true; // disable button
+                    player2.requestFullscreen();
+                    player2.currentTime(0);
+                    window.setTimeout(function() {
+                        btn.disabled = false; // enable button
+                    }, 2000 /* 2 sec */ );
+                }
+            } //note Do ... fumier... révolution... 
+            //reste à faire : 
+            //cancel full screen et stop video quand c'est fini
+            // Nouveau texte 
+            if (event.keyCode === 101 || event.keyCode === 53 || event.keyCode === 12) { //seconde bouton
+                if (btn_nxt.disabled === true) {
+                    return;
+                } else {
+                    $('#button_next').trigger('click');
+                    btn_nxt.disabled = true; // disable button
+
+                    window.setTimeout(function() {
+                        btn_nxt.disabled = false; // enable button
+                    }, 1000 /* 1 sec */ );
+                }
+            }
+            //do something
+        });
+
+    </script>
+</body>
+
+</html>
