@@ -33,3 +33,30 @@ body{
 }.modal__footer {
     bottom: 0;
 }
+.css-button {
+    background: black;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display:flex;
+    box-shadow: 5px 5px 5px grey;
+}
+.css-button-inner{
+    background: black;
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 75%;
+    height: 75%;
+    margin: auto;
+    display:flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.button-container {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}

@@ -99,7 +99,7 @@
                     </div>
                 </div>
                 <div class="column col-7">
-                    <div id="carouselExampleIndicators" class="carousel slide mt-3" data-interval="false">
+                    <div id="carouselExampleIndicators" class="carousel slide mt-3" style="height: 650px!important;" data-interval="false">
                         <ol class="carousel-indicators mt-5" style="bottom: -50px">
                             <li data-target="#carouselExampleIndicators" style="background-color: black;" data-slide-to="0" class="active"></li>
                             <li data-target="#carouselExampleIndicators" style="background-color: black;" data-slide-to="1"></li>
@@ -108,7 +108,11 @@
                             <li data-target="#carouselExampleIndicators" style="background-color: black;" data-slide-to="4"></li>
                             <li data-target="#carouselExampleIndicators" style="background-color: black;" data-slide-to="5"></li>
                             <li data-target="#carouselExampleIndicators" style="background-color: black;" data-slide-to="6"></li>
-
+                            <li data-target="#carouselExampleIndicators" style="background-color: black;" data-slide-to="7"></li>
+                            <li data-target="#carouselExampleIndicators" style="background-color: black;" data-slide-to="8"></li>
+                            <li data-target="#carouselExampleIndicators" style="background-color: black;" data-slide-to="9"></li>
+                            <li data-target="#carouselExampleIndicators" style="background-color: black;" data-slide-to="10"></li>
+                            <li data-target="#carouselExampleIndicators" style="background-color: black;" data-slide-to="11"></li>
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -316,7 +320,19 @@
 
 
                     <div class="row float-right mr-5 mt-2">
-                        <img src="./images/boutons_info.png" width="50%" height="50%" class="ml-auto float-right mt-5 mb-2" alt="">
+                        <div class=button-container>
+                            <div>Lancer la vidéo</div>
+                            <div class=css-button>
+                                <div id=btn_start_video class=css-button-inner></div>
+                            </div>
+                        </div>
+                        <div class=button-container>
+                            <div>Page Suivante</div>
+                            <div class=css-button>
+                                <div id=btn_nxt_page class=css-button-inner></div>
+                            </div>
+                        </div>
+                        <!--img src="./images/boutons_info.png" width="50%" height="50%" class="ml-auto float-right mt-5 mb-2" alt=""-->
                     </div>
                     <br />
                 </div>
@@ -357,13 +373,14 @@
         document.addEventListener("keyup", event => {
             if (event.isComposing || event.keyCode === 229) {
                 return;
-            }
+            }   
             if (event.keyCode === 103 || event.keyCode === 55 || event.keyCode === 36) { //premier bouton
                 if (btn.disabled === true) {
                     return;
                 } else {
                     $('#video_presentation').trigger('click');
                     btn.disabled = true; // disable button
+                    $('#btn_nxt_page').css("background", "black");
                     player2.requestFullscreen();
                     player2.currentTime(0);
                     window.setTimeout(function() {
@@ -374,21 +391,29 @@
             //reste à faire : 
             //cancel full screen et stop video quand c'est fini
             // Nouveau texte 
-            if (event.keyCode === 101 || event.keyCode === 53 || event.keyCode === 12) { //seconde bouton
+            if (event.keyCode === 101 || event.keyCode === 53 || event.keyCode === 12) { //second bouton
                 if (btn_nxt.disabled === true) {
                     return;
                 } else {
                     $('#button_next').trigger('click');
                     btn_nxt.disabled = true; // disable button
-
+                    $('#btn_nxt_page').css("background", "black"); // retour visuel de l'appui de bouton
                     window.setTimeout(function() {
                         btn_nxt.disabled = false; // enable button
-                    }, 1000 /* 1 sec */ );
+                    }, 10 /* 1 sec */ );
                 }
             }
-            //do something
         });
 
+        document.addEventListener("keydown", event => {
+            if (event.keyCode === 101 || event.keyCode === 53 || event.keyCode === 12) { //seconde bouton
+                if (btn_nxt.disabled === true) {
+                    return;
+                } else {
+                    $('#btn_nxt_page').css("background", "darkgreen"); // retour visuel de l'appui de bouton
+                }
+            }
+        });
     </script>
 </body>
 
